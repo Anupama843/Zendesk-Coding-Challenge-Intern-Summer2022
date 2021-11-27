@@ -1,0 +1,97 @@
+:root{
+    --background: #f7f7f7;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+ul, li {
+    margin: 0.6rem;
+}
+
+.tickets {
+    width: 100%;
+}
+
+.ticket {
+    padding: 0.3rem;
+    background-color: var(--background);
+    height: fit-content;
+    -moz-box-shadow: 0 0 4px rgb(224, 220, 220);
+    -webkit-box-shadow: 0 0 4px rgb(224, 220, 220);;
+    box-shadow: 0 0 4px rgb(224, 220, 220);;
+}
+
+.compact-view {
+    display: flex;
+    justify-content: space-between;
+}
+
+.compact-view .ticket-no,  .subject, .priority, .status{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+}
+
+.compact-view .ticket-no-label, .subject-label, .priority-label, .status-label {
+    width: 90px;
+}
+
+.details-view .created, .last-updated, .tags, .requester, .assignee {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+}
+
+.details-view .created-label, .last-updated-label, .tags-label, .requester-label, .assignee-label {
+    width: 90px;
+}
+
+.ticket, p {
+    margin: 0.1rem;
+    padding: 0.1rem;
+    white-space:pre-line;
+}
+
+.next-previous-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+}
+.description {
+    margin: 0.5rem;
+}
+
+.description .description-value {
+    border: 0.1rem solid black;
+    border-radius: 4px;
+}
+
+.show-hide {
+    margin: 1.5rem .5rem 0 0;
+    border:1px solid black;
+    border-radius: 5px;
+    background-color: var(--background);
+    height: 44px;
+    width: 100px;
+}
+
+.previous-button, .next-button {
+    border:1px solid black;
+    border-radius: 4px;
+    text-decoration: inherit;
+    font-size: medium;
+    background-color: var(--background);
+    height: 44px;
+    width: 100px;
+}
+
+.error-view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
