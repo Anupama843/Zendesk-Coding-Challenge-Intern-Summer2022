@@ -19,6 +19,7 @@ function Tickets() {
 
     useEffect(() => {
         getTickets(url)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     function getTickets(url) {
